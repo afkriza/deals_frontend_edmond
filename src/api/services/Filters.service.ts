@@ -16,4 +16,4 @@ export const fetchOptions = (url: string, filtersQuery: FiltersQuery) =>
   });
 
 export const setFilterPin = (namespace: string, payload) =>
-  httpClient.put(`${namespace}/filters`, payload);
+  httpClient.put(`${namespace}/filters/`, payload);

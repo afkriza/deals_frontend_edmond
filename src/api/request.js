@@ -47,9 +47,9 @@ export default async function ({
     requestData.body = JSON.stringify(data);
   }
 
-  if (method === 'get') {
+  if (['get', 'post', 'put', 'delete'].includes(method)) {
     const query = querify(data);
-    requestUrl = query ? `${url}?${query}` : url;
+    requestUrl = query ? `${url}/?${query}` : `${url}/`;
   }
 
   const res = await fetch(requestUrl, requestData);

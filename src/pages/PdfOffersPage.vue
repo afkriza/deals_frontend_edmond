@@ -189,7 +189,8 @@
 
     get currencyMap() {
       return {
-        '€': 'EUR'
+        '€': 'EUR',
+        'EUR': 'EUR'
       };
     }
 
