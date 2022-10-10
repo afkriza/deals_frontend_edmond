@@ -1,0 +1,82 @@
+@import 'colors';
+
+$media-breakpoints: (
+  mobile: 0 767,
+  tablet: 768 991,
+  desktop: 992 1749,
+  large: 1750,
+  wide: 1920,
+  huge: 2560
+);
+
+$container-width: (
+  mobile: 530px,
+  tablet: 930px,
+  desktop: 1450px,
+  large: 1730px,
+);
+
+$units-block-width: 100px;
+
+$light-shadow: 0 4px 10px $light-shadow-color;
+
+$dropdown-shadow: $light-shadow;
+$toast-shadow: $light-shadow;
+$fab-shadow: $light-shadow;
+$tooltip-shadow: 0 4px 10px $light-shadow-color;
+$modal-shadow: 0 10px 26px $dark-shadow-color;
+$toolbar-shadow: 0 -4px 8px $base-gallery;
+$navigation-shadow: 0 1px 8px 0 $dark-shadow-color;
+$card-shadow: 0 2px 6px rgba($base-black, 0.35);
+$dashboard-grid-item-shadow: 0 4px 16px $light-shadow-color;
+$dashboard-grid-item-shadow-transparent: 0 0 0 $light-shadow-color;
+$dashboard-grid-item-active-shadow: 0 10px 36px rgba($base-black, 0.25);
+$widget-page-aside-box-shadow: 0 1px 0 $base-dark-gray;
+$widget-page-toolbar-box-shadow: 0 1px 8px $dark-shadow-color;
+$value-calculator-box-shadow: 0 4px 10px $dark-shadow-color;
+$value-calculation-box-shadow: 0 2px 4px rgba($base-black, 0.08);
+$value-calculation-active-box-shadow: 0 0 7px 0 rgba($color-primary, 0.3);
+$chart-tooltip-box-shadow: 0 10px 40px 0 $dark-shadow-color;
+$chart-tooltip-light-box-shadow: 0 4px 10px 0 $dark-shadow-color;
+
+$base-border-radius: 4px;
+
+$action-footer-height: 82px;
+$smaller-action-footer-height: 72px;
+$navigation-width: 64px;
+$min-filter-height: 60px;
+
+$changed: 'changed';
+$inactive: 'inactive';
+$positive: 'positive';
+$negative: 'negative';
+
+$request-status-types: (
+  #{$changed}: (
+    'background-color': $color-bg-primary-dimmed,
+    'border-color': $color-border-primary-light,
+    'color': $color-text-primary
+  ),
+  #{$inactive}: (
+    'background-color': $color-bg-main-light,
+    'border-color': $color-border-main,
+    'color': $color-text-main
+  ),
+  #{$positive}: (
+    'background-color': $color-bg-success-dimmed,
+    'border-color': $color-border-success-mid,
+    'color': $color-text-success
+  ),
+  #{$negative}: (
+    'background-color': $color-bg-warning-light,
+    'border-color': $color-border-warning-light,
+    'color': $color-text-warning
+  )
+);
+
+$change-card-title-colors: (
+  #{$changed}: $color-text-primary,
+  #{$inactive}: $color-text-main-light,
+  #{$positive}: $color-text-success,
+  #{$negative}: $color-text-warning
+)

@@ -1,0 +1,34 @@
+@import 'utils/colors';
+
+* { /* stylelint-disable-line selector-max-universal */
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+.pika-single {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: $color-text-main;
+  line-height: 20px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+// Remove chrome autofill background color
+
+/* stylelint-disable selector-max-specificity, property-no-vendor-prefix,
+   length-zero-no-unit, color-named, declaration-no-important */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  box-shadow: 0 0 0px 1000px white inset !important;
+}

@@ -1,0 +1,11 @@
+export const ARROW_UP = 'ARROW_UP';
+export const ARROW_DOWN = 'ARROW_DOWN';
+export const ENTER = 'ENTER';
+export const KEY_M = 'M';
+export const KEY_Y = 'Y';
+export const KEY_D = 'D';
+export const KEY_W = 'W';
+export const ZERO = 'ZERO';
+export const NINE = 'NINE';
+export const PERIOD = 'PERIOD';
+export const ESCAPE = 'ESCAPE';

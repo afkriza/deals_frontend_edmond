@@ -1,0 +1,16 @@
+export const PINK = '#F23DB0';
+export const YELLOW = '#FAA169';
+export const ORANGE = '#FA775C';
+export const GREENISH = '#62D9C9';
+export const DARKER_BLUE = '#131F2F';
+export const DARK_BLUE = '#303F52';
+export const BLUE = '#3781C2';
+export const LIGHT_BLUE = '#579BD7';
+export const SHARP_BLUE = '#5568E0';
+export const PURPLE = '#7581FF';
+export const MEDIUM_PURPLE = '#B954EB';
+export const TEXT_MAIN = '#3C3E40';
+export const TEXT_MAIN_LIGHT = '#7A7D80';
+export const TEXT_MAIN_LIGHTER = '#ADAFB2';
+export const GRID_COLOR = '#E3E4E5';
+export const ZEROLINE_COLOR = '#E3E4E5';

@@ -1,0 +1,70 @@
+
+.height-enter-active {
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.height-leave-active {
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.height-enter-to,
+.height-leave {
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.height-enter,
+.height-leave-to {
+  overflow: hidden;
+  max-height: 0;
+}
+
+.tooltip-fade-enter-active,
+.tooltip-fade-leave-active {
+  transition: opacity 300ms;
+}
+
+.tooltip-fade-enter,
+.tooltip-fade-leave-to {
+  opacity: 0;
+}
+
+.dropdown-fade-enter-active,
+.dropdown-fade-leave-active {
+  transition: opacity 0.2s;
+}
+
+.dropdown-fade-enter,
+.dropdown-fade-leave-to {
+  opacity: 0;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 0.5s;
+  transition-property: width, transform;
+}
+
+.slide-enter,
+.slide-leave-to {
+  width: 0;
+  transform: translateX(100%);
+}
+
+.slide-enter-to,
+.slide-leave {
+  width: auto;
+  transform: translateX(0);
+}
+
+.expanded-filters-fade-enter-active,
+.expanded-filters-fade-leave-active {
+  transition: opacity 0.2s;
+}
+
+.expanded-filters-fade-enter,
+.expanded-filters-fade-leave-to {
+  opacity: 0;
+}

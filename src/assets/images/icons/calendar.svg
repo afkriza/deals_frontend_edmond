@@ -1,0 +1,8 @@
+<svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="evenodd">
+        <rect height="15" rx="2" stroke="currentColor" width="17" x="3.5" y="5.5"/>
+        <rect fill="currentColor" height="5" rx=".5" width="1" x="7" y="3"/>
+        <rect fill="currentColor" height="5" rx=".5" width="1" x="16" y="3"/>
+        <path d="m3 10h18v1h-18z" fill="currentColor"/>
+    </g>
+</svg>

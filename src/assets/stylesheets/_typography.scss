@@ -1,0 +1,15 @@
+$text-sizes: (
+  'h1': 24px,
+  'h2': 20px,
+  'h3': 17px,
+  'h4': 14px,
+  'h5': 12px,
+  'h6': 10px,
+  'body': 14px
+);
+
+@each $element, $font-size in $text-sizes {
+  #{$element} {
+    font-size: $font-size;
+  }
+}

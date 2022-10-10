@@ -1,0 +1,12 @@
+export const PLUS = 'plus';
+export const MINUS = 'minus';
+export const MULTIPLY = 'multiply';
+export const DIVIDE = 'divide';
+export const COMMA = 'comma';
+export const BRACKETS_CLOSE = 'brackets_close';
+export const BRACKETS_OPEN = 'brackets_open';
+export const MIN = 'min';
+export const MAX = 'max';
+export const SUM = 'sum';
+export const AVG = 'avg';
+export const COALESCE = 'coalesce';

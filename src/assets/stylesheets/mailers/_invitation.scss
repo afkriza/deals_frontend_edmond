@@ -1,0 +1,83 @@
+@import 'utils/colors';
+@import 'utils/variables';
+
+.invitations {
+  &__table {
+    border: 0;
+    width: 480px;
+
+    /* stylelint-disable selector-max-type */
+    tr,
+    td {
+      height: 1px;
+      background-color: $color-gray-90;
+      border-collapse: collapse;
+      line-height: 1px;
+    }
+
+    /* stylelint-enable selector-max-type */
+  }
+
+  &__container {
+    width: 100%;
+    margin: auto;
+    padding-left: 40px;
+    padding-top: 64px;
+  }
+
+  &__title {
+    padding-top: 64px;
+    width: 480px;
+    font-weight: bold;
+    font-size: 24px;
+    color: $color-text-main;
+  }
+
+  &__text {
+    width: 480px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__ignore_text {
+    font-size: 12px;
+    width: 480px;
+    color: $color-gray-50;
+  }
+
+  &__unsubscribe-link {
+    font-size: 12px;
+    padding-left: 2px;
+    padding-right: 2px;
+    text-decoration: none;
+    font-weight: bold;
+    color: $color-text-primary;
+  }
+
+  &__button {
+    width: 172px;
+    height: 50px;
+    font-size: 14px;
+    padding: 15px 35px;
+    line-height: 20px;
+    font-weight: bold;
+    border-radius: $base-border-radius;
+    text-align: center;
+    text-decoration: none;
+    color: $color-text-light;
+    background-color: $color-bg-primary;
+  }
+
+  &__button:link {
+    text-decoration: none;
+  }
+
+  &__reset-link {
+    font-size: 14px;
+    padding-left: 2px;
+    padding-right: 2px;
+    text-decoration: none;
+    font-weight: bold;
+    color: $color-text-primary;
+  }
+}

@@ -1,0 +1,9 @@
+.windows-scrollbar {
+  .v-custom-scroll-dark {
+    @include scrollbar($color-bg-primary-mid, $color-bg-primary-darker);
+  }
+
+  .v-custom-scroll-light {
+    @include scrollbar($color-macos-scrollbar, $color-bg-light);
+  }
+}

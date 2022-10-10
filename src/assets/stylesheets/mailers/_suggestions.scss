@@ -1,0 +1,94 @@
+/* stylelint-disable selector-max-type, max-nesting-depth */
+
+@import 'utils/colors';
+
+.suggestions {
+  &__container {
+    width: 100%;
+    margin: auto;
+    padding-left: 40px;
+    padding-top: 74px;
+    padding-bottom: 74px;
+  }
+
+  &__title {
+    padding-top: 64px;
+    width: 480px;
+    font-weight: bold;
+    font-size: 24px;
+    color: $color-text-main;
+    text-transform: capitalize;
+  }
+
+  &__property-title {
+    text-transform: uppercase;
+    color: $color-text-main-lighter;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  &__table {
+    width: 100%;
+    border-spacing: 0;
+
+    tr {
+      th {
+        font-size: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+        color: $color-text-main-lighter;
+        line-height: 24px;
+        padding: 8px 0;
+        background-color: $color-bg-light;
+
+        &.w10 {
+          width: 10%;
+        }
+
+        &.w15 {
+          width: 15%;
+        }
+
+        &.w20 {
+          width: 20%;
+        }
+
+        &.w25 {
+          width: 25%;
+        }
+      }
+
+      td {
+        text-align: center;
+        font-size: 14px;
+        padding: 25px 0;
+        color: $color-text-main;
+
+        &.suggestion {
+          &--close {
+            font-weight: bold;
+            color: $color-text-warning;
+          }
+
+          &--open {
+            font-weight: bold;
+            line-height: 20px;
+            color: $color-text-primary;
+          }
+        }
+      }
+
+      th,
+      td {
+        border: {
+          top: 1px solid $color-border-main;
+        }
+      }
+    }
+  }
+}
+
+/* stylelint-enable selector-max-type, max-nesting-depth */

@@ -1,0 +1,8 @@
+@import 'core';
+@import 'mailers/suggestions';
+@import 'mailers/checkout';
+@import 'mailers/invitation';
+
+.body {
+  font-family: 'Lato', 'Trebuchet MS', 'Helvetica', sans-serif;
+}

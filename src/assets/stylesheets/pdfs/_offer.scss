@@ -1,0 +1,67 @@
+@import 'utils/colors';
+
+.offer {
+  .property-name {
+    text-align: center;
+    color: $color-primary
+  }
+
+  .hr {
+    background-color: $base-river-bed-blue;
+    height: 3px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .memorandum {
+    display: flex;
+    display: -webkit-box;             /* wkhtmltopdf uses this one */
+
+    flex-direction: row;
+    -webkit-box-orient: horizontal;   /* wkhtmltopdf uses this one */
+    -webkit-box-direction: normal;    /* wkhtmltopdf uses this one */
+
+    justify-content: space-between;
+    -webkit-box-pack: justify;        /* wkhtmltopdf uses this one */
+
+    .maistra-memorandum {
+      width: 50%;
+
+      b {
+        margin-top: 10px;
+      }
+
+      p {
+        margin-top: 4px;
+        margin-bottom: 0;
+
+        &:last-child {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .partner-memorandum {
+      width: 50%;
+    }
+  }
+
+  .offer-details {
+    table {
+      width: 100%;
+
+      th {
+        &.left {
+          text-align: left;
+        }
+      }
+
+      td {
+        &.center {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

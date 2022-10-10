@@ -1,0 +1,35 @@
+@import 'utils';
+
+.vue-grid-item {
+  z-index: 2; //To render above placeholder
+
+  /* stylelint-disable declaration-no-important */
+  &.vue-grid-placeholder {
+    background: $color-bg-main-light !important;
+    opacity: 1 !important;
+
+    .vue-resizable-handle {
+      display: none;
+    }
+  }
+
+  &.resizing {
+    opacity: 1 !important;
+  }
+
+  &.vue-draggable-dragging {
+    box-shadow: $dashboard-grid-item-active-shadow;
+  }
+
+  &.vue-resizable {
+    overflow: hidden;
+  }
+
+  > .vue-resizable-handle {
+    z-index: 3;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAA8SURBVHgB7dKxCQAgDETRQ5zDrVzOZRU7sdEQkuo/SBMCR+AkAMjV+ph7zl1RMAII8KuW47vjP8I/wNMCopoGOXIb7NsAAAAASUVORK5CYII=') !important;
+    background-position: -8px -8px !important;
+  }
+
+  /* stylelint-enable declaration-no-important */
+}

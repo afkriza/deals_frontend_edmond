@@ -1,0 +1,117 @@
+@import 'utils';
+
+.pika-single {
+  z-index: $z-floating-content;
+  border: 0;
+}
+
+// In order to overwrite the styles from VUE components, we need larger specificity so we have 2 classes, example .date-theme-light.date-header-light instead of .date-header-light
+.date-theme-light {
+  &.date-range {
+    background-color: $color-bg-light;
+  }
+
+  &.date-header-light {
+    .pika-title {
+      padding-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .pika-label {
+        border: none;
+        color: $color-text-main;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: none;
+        order: 2;
+      }
+
+      .pika-label:first-child {
+        margin-left: auto;
+      }
+
+      .pika-label:nth-child(2) {
+        margin-right: auto;
+      }
+    }
+
+    .pika-prev {
+      background-image: url('~ic-24-arrow-left.png');
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      background-size: 24px 24px;
+      opacity: 1;
+      order: 1;
+      background-position: left;
+
+      @include media(retina) {
+        background-image: url('~ic-24-arrow-left@2x.png');
+      }
+    }
+
+    .pika-next {
+      background-image: url('~ic-24-arrow-right.png');
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      background-size: 24px 24px;
+      opacity: 1;
+      order: 3;
+      background-position: right;
+
+      @include media(retina) {
+        background-image: url('~ic-24-arrow-right@2x.png');
+      }
+    }
+  }
+
+  &.date-range-picker {
+    display: flex;
+  }
+
+  &.date-input-default-light {
+    .pika-table td .pika-button {
+      color: $color-text-main-light;
+      line-height: 1;
+      background-color: $color-bg-light;
+      position: relative;
+      border-radius: 0;
+      text-align: center;
+      font-size: 12px;
+      width: 32px;
+      height: 32px;
+      margin-bottom: 8px;
+      transition-property: color, background-color, border-radius, font-weight;
+      transition-duration: 0.2s;
+    }
+
+    .pika-table td.is-selected .pika-button,
+    .pika-table td.is-startrange .pika-button,
+    .pika-table td.is-endrange .pika-button {
+      color: $color-text-light;
+      background-color: $color-bg-primary;
+    }
+  }
+}
+
+.date-theme-dark {
+  .pika-prev,
+  .pika-next {
+    &:hover {
+      border-color: $color-border-primary-mid;
+      background-color: $color-bg-primary-dark;
+    }
+  }
+
+  .pika-title {
+    .pika-label {
+      &:hover {
+        border-color: $color-border-primary-mid;
+        background-color: $color-bg-primary-dark;
+      }
+    }
+  }
+}

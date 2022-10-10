@@ -1,0 +1,3 @@
+@function imageUrl($name) {
+  @return url('app/assets/images/' + $name);
+}

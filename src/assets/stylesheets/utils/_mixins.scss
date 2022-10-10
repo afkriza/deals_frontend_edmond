@@ -1,0 +1,271 @@
+@import 'utils/colors';
+
+@mixin card {
+  background-color: $color-bg-light;
+  box-shadow: $dropdown-shadow;
+}
+
+@mixin button {
+  padding: 0;
+  border: 0;
+
+  cursor: pointer;
+  user-select: none;
+  text-transform: capitalize;
+  background-color: transparent;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &[disabled] {
+    cursor: default;
+  }
+}
+
+@mixin circle($diameter, $background-color: null, $border: null) {
+  min-width: $diameter;
+  height: $diameter;
+  border-radius: 50%;
+
+  @if($background-color) {
+    background-color: $background-color;
+  }
+
+  @if($border) {
+    border: $border;
+  }
+}
+
+@mixin svg-icon($size: 24px) {
+  width: $size;
+  height: $size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin svg-color($color) {
+  path {
+    /* stylelint-disable-line selector-max-type */
+    fill: $color;
+  }
+}
+
+@mixin center-svg-icon() {
+  svg {
+    /* stylelint-disable-line selector-max-type */
+    vertical-align: middle;
+  }
+}
+
+@mixin stretch($position: absolute, $top: 0, $right: 0, $bottom: 0, $left: 0) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin button-states(
+  $bg-color,
+  $bg-color-active: darken($bg-color, 6%),
+  $bg-color-focus: lighten($bg-color, 3%),
+  $bg-color-hover: $bg-color-focus
+) {
+  background-color: $bg-color;
+  transition: background-color 0.2s;
+
+  &:not([disabled]) {
+    &:active {
+      background-color: $bg-color-active;
+    }
+
+    &:focus {
+      background-color: $bg-color-focus;
+    }
+
+    &:hover {
+      background-color: $bg-color-hover;
+    }
+  }
+}
+
+@mixin arrow {
+  &::after {
+    content: '';
+    display: inline-block;
+    border: 4px solid transparent;
+    border-top-color: $color-border-main-darker;
+    border-bottom-width: 1px;
+    border-top-width: 5px;
+    transition: transform 0.15s;
+  }
+}
+
+@mixin openArrow {
+  &::after {
+    @include arrow;
+    transform: rotate(180deg);
+  }
+}
+
+@mixin horizontal-center {
+  right: 50%;
+  transform: translateX(50%);
+}
+
+@mixin vertical-center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin container-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin text-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin flex-center($is-inline: false, $flex-direction: row) {
+  $display: flex;
+
+  @if $is-inline {
+    $display: inline-flex;
+  }
+
+  display: $display;
+  flex-direction: $flex-direction;
+
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+@mixin fullwidth-image {
+  display: block;
+  width: 100%;
+}
+
+@mixin row {
+  display: flex;
+}
+
+@mixin column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin public-page-bg {
+  @include flex-center;
+
+  background-color: $base-white-dimmed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+@mixin toolbar($position, $z-index, $height) {
+  position: $position;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  z-index: $z-toolbar;
+
+  height: $height;
+}
+
+@mixin scrollbar($thumb-color, $track-color) {
+  // Firefox
+  scrollbar-color: $thumb-color $track-color;
+  scrollbar-width: thin;
+
+  $full-width: 14px;
+
+  // For Google Chrome
+  &::-webkit-scrollbar {
+    width: $full-width;
+    height: $full-width;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $thumb-color;
+    border-radius: 100px;
+    border: 4px solid $track-color;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $track-color;
+  }
+
+  // For Internet Explorer
+  & {
+    scrollbar-face-color: $thumb-color;
+    scrollbar-track-color: $track-color;
+  }
+}
+
+@mixin filters {
+  position: relative;
+  z-index: $z-filters;
+}
+
+@mixin position($top, $right: $top, $bottom: $top, $left: $right) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin hard-shadow($color, $width: 1px) {
+  box-shadow: 0 0 0 $width $color;
+}
+
+@mixin input() {
+  outline: none;
+  background: none;
+  border: none;
+  box-shadow: none;
+  filter: none;
+}
+
+@mixin skeleton($bg-color: $color-bg-primary-mid, $gradient: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.13) 66.4%, rgba(255, 255, 255, 0) 100%)) {
+  position: relative;
+  overflow: hidden;
+  background-color: $bg-color;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background-image: $gradient;
+    animation: shimmer 2s infinite;
+    content: '';
+  }
+
+  @keyframes shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+}

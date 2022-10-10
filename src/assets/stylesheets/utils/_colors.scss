@@ -1,0 +1,194 @@
+$base-matisse-blue: #1E559A;
+$base-mariner-blue: #2367BA;
+$base-portage-blue: #77A9E6;
+$base-charcoal-blue: #32465E;
+$base-river-bed-blue: #444D56;
+$base-pickled-bluewood: #32465E;
+$base-bright-gray: #353D45;
+$base-outer-space-blue: #2A3139;
+$base-link-water-blue: #D0E1F5;
+$base-alice-blue: #F2F8FF;
+$base-neon-carrot-orange: #FF8F40;
+$base-macaroni-and-cheese-orange: #FFB27A;
+$base-serenade: #FFEEE5;
+$base-flesh-orange: #FFD1A8;
+$base-tuft-pink: #FFD2C9;
+$base-fair-pink: #FFEBE7;
+$base-damask-red: #D35A41;
+$base-hawkes-blue: #eff5fe;
+$base-cornflower-blue: #4285f4;
+
+$base-cape-cod-gray: #3C3E40;
+$base-rolling-stone-gray: #7A7D80;
+$base-bombay-gray: #ADAFB2;
+$base-silver-sand: #C8CACC;
+$base-iron-gray: #E3E4E5;
+$base-white-dimmed: #FAFAFA;
+$base-white: #FFFFFF;
+
+$base-shamrock-green: #2BC57B;
+$base-chinook-green: #9FDFB7;
+$base-narvik-green: #EEF9F2;
+$base-carnation-red: #F54559;
+$base-brink-pink: #FA6973;
+$base-liver-chestnut-red: #5D3237;
+$base-coral-red: #FF2B43;
+$base-cinderella-red: #FCCFD0;
+$base-chablis-red: #FFF5F6;
+
+$base-purple-pizzaz: #FF07C9;
+$base-sundown: #FFADB8;
+
+$base-black: #000000;
+$base-gallery: #EAEAEA;
+
+// PRIMARY
+$color-primary: $base-matisse-blue;
+$color-primary-highlight: $base-mariner-blue;
+$color-primary-hover-dark: $base-charcoal-blue;
+$color-primary-mid: $base-river-bed-blue;
+$color-primary-dark: $base-bright-gray;
+$color-primary-dark-hover: $base-pickled-bluewood;
+$color-primary-darker: $base-outer-space-blue;
+$color-primary-light: $base-link-water-blue;
+$color-primary-dimmed: $base-alice-blue;
+$color-primary-mid-blue: $base-portage-blue;
+
+// SECONDARY
+$color-secondary: $base-neon-carrot-orange;
+$color-secondary-mid: $base-macaroni-and-cheese-orange;
+$color-secondary-highlight: $base-flesh-orange;
+
+// NEUTRALS
+$color-gray-25: $base-cape-cod-gray;
+$color-gray-50: $base-rolling-stone-gray;
+$color-gray-70: $base-bombay-gray;
+$color-gray-80: $base-silver-sand;
+$color-gray-90: $base-iron-gray;
+$color-gray-98: $base-white-dimmed;
+$color-white: $base-white;
+
+// SUCCESS
+$color-success: $base-shamrock-green;
+$color-success-mid: $base-chinook-green;
+$color-success-dimmed: $base-narvik-green;
+
+// WARNING
+$color-warning: $base-carnation-red;
+$color-warning-highlight: $base-brink-pink;
+$color-warning-hover-dark: $base-liver-chestnut-red;
+$color-warning-dark: $base-coral-red;
+$color-warning-light: $base-cinderella-red;
+$color-warning-dimmed: $base-chablis-red;
+
+// Text
+$color-text-main: $color-gray-25;
+$color-text-main-light: $color-gray-50;
+$color-text-main-mild-light: $color-gray-80;
+$color-text-main-lighter: $color-gray-70;
+$color-text-main-lightest: $base-silver-sand;
+$color-text-light: $color-white;
+$color-text-primary: $color-primary;
+$color-text-primary-light: $color-primary-light;
+$color-text-primary-highlight: $color-primary-highlight;
+$color-text-primary-mid: $color-primary-mid;
+$color-text-primary-dark: $color-primary-dark;
+$color-text-primary-darker: $color-primary-darker;
+$color-text-secondary: $color-secondary;
+$color-text-success: $color-success;
+$color-text-warning: $color-warning;
+$color-text-warning-light: $base-damask-red;
+
+// Border
+$color-border-main: $color-gray-80;
+$color-border-main-light: $color-gray-90;
+$color-border-main-dimmed: $color-gray-98;
+$color-border-main-lightest: $base-silver-sand;
+$color-border-main-mid: $color-gray-70;
+$color-border-main-dark: $color-gray-50;
+$color-border-main-darker: $color-gray-25;
+$color-border-light: $color-white;
+$color-border-primary: $color-primary;
+$color-border-primary-highlight: $color-primary-highlight;
+$color-border-primary-light: $color-primary-light;
+$color-border-primary-mid: $color-primary-mid;
+$color-border-primary-dark: $color-primary-dark;
+$color-border-primary-darkest: $color-primary-darker;
+$color-border-secondary: $color-secondary;
+$color-border-success: $color-success;
+$color-border-success-mid: $color-success-mid;
+$color-border-warning: $color-warning;
+$color-border-warning-highlight: $color-warning-highlight;
+$color-border-warning-light: $color-warning-light;
+$color-border-warning-lighter: $base-tuft-pink;
+$color-border-orange-light: $color-secondary-mid;
+$color-border-blue-light: $color-primary-mid-blue;
+$color-border-primary-dark-hover: $color-primary-dark-hover;
+
+// Background
+$color-bg-light: $color-white;
+$color-bg-main: $color-gray-80;
+$color-bg-main-dark: $color-gray-25;
+$color-bg-main-darker: $color-gray-50;
+$color-bg-main-mid: $color-gray-70;
+$color-bg-main-light: $color-gray-90;
+$color-bg-main-dimmed: $color-gray-98;
+$color-bg-primary: $color-primary;
+$color-bg-primary-highlight: $color-primary-highlight;
+$color-bg-primary-hover-dark: $color-primary-hover-dark;
+$color-bg-primary-dark: $color-primary-dark;
+$color-bg-primary-dark-hover: $base-pickled-bluewood;
+$color-bg-primary-darker: $color-primary-darker;
+$color-bg-primary-mid: $color-primary-mid;
+$color-bg-primary-light: $color-primary-light;
+$color-bg-primary-dimmed: $color-primary-dimmed;
+$color-bg-secondary: $color-secondary;
+$color-bg-success: $color-success;
+$color-bg-success-dimmed: $color-success-dimmed;
+$color-bg-warning: $color-warning;
+$color-bg-warning-highlight: $color-warning-highlight;
+$color-bg-warning-dark: $color-warning-dark;
+$color-bg-warning-light: $color-warning-dimmed;
+$color-bg-warning-lighter: $base-fair-pink;
+
+$color-bg-backdrop: rgba($color-gray-70, 0.7);
+$color-bg-overlay: rgba($color-primary, 0.3);
+
+// LEGACY on dashboard page, TODO: remove after design is done
+$color-text-dimmed-blue: #80C6CF;
+$color-border-brown-gray: #ADADAD;
+$color-bg-ice-blue-two: #E8F6F7;
+$base-dark-gray: #4A4A4A;
+$color-bg-pale-gray-two:#F9FDFD;
+
+
+// SHADOW //
+$lighter-shadow-color: rgba($base-black, 0.08);
+$light-shadow-color: rgba($base-black, 0.1);
+$dark-shadow-color: rgba($base-black, 0.15);
+$progress-bar-shadow: #C2F2E0;
+
+// OVERVIEW
+$color-bad-regular: #F54559;
+$color-bad-lighter: #FF4C61;
+$color-bad-darker: #CC3344;
+
+$color-mid-regular: #FFE14C;
+$color-mid-lighter: #FFE359;
+$color-mid-darker: #DBBE2C;
+
+$color-good-regular: #13BF7D;
+$color-good-lighter: #1BB278;
+$color-good-darker: #139E69;
+
+$progress-bar-shadow: #C2F2E0;
+
+// SCROLLBAR
+$color-macos-scrollbar: #7D7D7D;
+
+// CHARTS
+$color-chart-purple: #B954EB;
+
+// STATUS
+$color-status-blue: $base-hawkes-blue;
+$color-status-signal-blue: $base-cornflower-blue;
