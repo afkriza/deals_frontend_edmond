@@ -101,7 +101,7 @@ class ApiAdapter {
     );
 
     return request({
-      url: `${NAMESPACES.USERS}/sessions`,
+      url: `${NAMESPACES.USERS}/sessions/`,
       method: 'post',
       data
     }).then(response => {
